@@ -1,0 +1,11 @@
+{
+  "description": "blah",
+  "repository": "no",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
