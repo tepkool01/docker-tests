@@ -14,3 +14,12 @@ services:
     # Windows fix for polling
     environment:
       - CHOKIDAR_USEPOLLING=true
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    volumes:
+      - /app/node_modules
+      - .:/app
+    # overriding default Dockerfile command
+    command: ["npm", "run", "test"]
